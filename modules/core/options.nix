@@ -1,6 +1,6 @@
 {
   flake.modules.nixvim.core = let
-    shell = "dash";
+    shell = "bash";
   in {
     clipboard.register = "unnamedplus";
     extraConfigLua = ''
