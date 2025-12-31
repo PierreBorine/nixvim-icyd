@@ -265,6 +265,7 @@
         bufdelete.enabled = true;
         debug.enabled = true;
         indent.enabled = true;
+        notifier.enabled = true;
         picker.enabled = true;
         profiles.enabled = true;
         scope.enabled = true;
