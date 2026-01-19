@@ -45,11 +45,8 @@
           shellcheck.cmd = getExe shellcheck;
           stylelint.cmd = getExe stylelint;
           yamllint.cmd = getExe yamllint;
+          markdownlint-cli2.cmd = getExe markdownlint-cli2;
         };
-        # FIX: cannot use `markdownlint-cli2` with regular config <25-05-07>
-        luaConfig.post = ''
-          __lint.linters["markdownlint-cli2"].cmd = "${getExe pkgs.markdownlint-cli2}"
-        '';
       };
     };
     userCommands = {
